@@ -1,0 +1,31 @@
+{
+  "name": "aircraft-battle",
+  "version": "1.0.0",
+  "description": "飞机大战",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "node node_modules/webpack/bin/webpack.js --config ./webpack.config.js",
+    "start": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --config ./webpack.config.js --mode=development",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "author": "xiaqi",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "file-loader": "^6.2.0",
+    "typescript": "^3.7.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "eslint": "^7.11.0",
+    "eslint-plugin-import": "^2.22.1",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0"
+  }
+}
